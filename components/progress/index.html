@@ -858,10 +858,10 @@
                 <h1 id="progress-activity">Progress &amp; activity<a class="headerlink" href="#progress-activity" title="Permanent link">&para;</a></h1>
 <h2 id="circular">Circular<a class="headerlink" href="#circular" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="../../images/circular-progress-1.gif" /></p>
-<blockquote>
-<p>摘自 google material design <a href="http://www.google.com/design/spec/components/progress-activity.html#">文档</a>.</p>
+<div class="admonition quote">
+<p class="admonition-title">摘自 google material design <a href="http://www.google.com/design/spec/components/progress-activity.html#">文档</a></p>
 <p>Minimize visual changes that occur while your app loads content by representing each operation with a single activity indicator. 例如，一个刷新操作应该显示一个 refresh bar 或者 activity circle 的任何一个，但是不能同时显示。</p>
-</blockquote>
+</div>
 <h3 id="_1">如何添加?<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <p>I. 在你的 <code>build.grade</code> 文件末尾添加 <code>appcompat</code> 库。</p>
 <div class="codehilite"><pre><span></span><span class="n">dependencies</span> <span class="o">{</span>
@@ -903,15 +903,12 @@
 </pre></div>
 
 
-<blockquote>
-<p>原文作者：Yakiv Mospan 原文链接：<a href="https://materialdoc.com/components/progress/#circular">Circular Progress</a></p>
-</blockquote>
 <h2 id="linear">Linear<a class="headerlink" href="#linear" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="../../images/linear-progress-1.gif" /></p>
-<blockquote>
-<p>摘自 google material design <a href="http://www.google.com/design/spec/components/progress-activity.html#">文档</a>.</p>
+<div class="admonition quote">
+<p class="admonition-title">摘自 google material design <a href="http://www.google.com/design/spec/components/progress-activity.html#">文档</a></p>
 <p>一个 linear progress 指示器应该总是从 0% 填充到 100%，绝对不能反着填充。 It should be represented by bars on the edge of a header or sheet that appear and disappear.</p>
-</blockquote>
+</div>
 <h3 id="_3">如何添加?<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>I. 在你的 <code>build.grade</code> 文件末尾添加 <code>appcompat</code> 库。</p>
 <div class="codehilite"><pre><span></span><span class="n">dependencies</span> <span class="o">{</span>
@@ -1028,10 +1025,15 @@
 </pre></div>
 
 
-<blockquote>
-<p>备注: <code>android:progressBackgroundTint</code> 属性只工作在确定的 <code>ProgressBar</code>。</p>
-<p>原文作者：Yakiv Mospan  原文链接：<a href="https://materialdoc.com/components/progress/#linear">Linear Progress</a></p>
-</blockquote>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p><code>android:progressBackgroundTint</code> 属性只工作在确定的 <code>ProgressBar</code>。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">翻译水平有限，欢迎批评指正</p>
+<p>原文作者：Yakiv Mospan
+原文链接：<a href="https://materialdoc.com/components/progress">Progress</a></p>
+</div>
                 
                   
                 

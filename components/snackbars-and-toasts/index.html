@@ -1006,10 +1006,10 @@
                 <h1 id="snackbars-toasts">Snackbars &amp; Toasts<a class="headerlink" href="#snackbars-toasts" title="Permanent link">&para;</a></h1>
 <h2 id="snack-bar">Snack Bar<a class="headerlink" href="#snack-bar" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="../../images/snack-bar-1.png" /></p>
-<blockquote>
-<p>摘自 google material design <a href="http://www.google.com.ua/design/spec/components/snackbars-toasts.html#">文档</a>.</p>
+<div class="admonition quote">
+<p class="admonition-title">摘自 google material design <a href="http://www.google.com.ua/design/spec/components/snackbars-toasts.html#">文档</a></p>
 <p>Snackbars 通过在屏幕底部显示一个简短的信息，提供了关于一个操作的轻量反馈。</p>
-</blockquote>
+</div>
 <h3 id="_1">如何添加?<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <p>I. 在你的 <code>build.grade</code> 文件末尾添加最新的 <code>design</code> 库。</p>
 <div class="codehilite"><pre><span></span><span class="n">dependencies</span> <span class="o">{</span>
@@ -1030,9 +1030,10 @@
 
 
 <p>参数 <code>view</code> 被用来查找父视图。Snackbar 将被显示在它的上面。</p>
-<blockquote>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
 <p>Snackbar 将尝试并找到一个父视图去控制 Snackbar's 视图。Snackbar 将沿着视图树去尝试找到一个合适的父视图，它被定义为一个 <code>CoordinatorLayout</code> 或者窗口的 decor's 内容视图，以先找到的为准。</p>
-</blockquote>
+</div>
 <h4 id="duration">Duration<a class="headerlink" href="#duration" title="Permanent link">&para;</a></h4>
 <p>指定 <code>Snackbar</code> 在屏幕上显示多长时间使用 <code>setDuration</code> 方法。</p>
 <div class="codehilite"><pre><span></span><span class="c1">// 预定义的持续时间常量</span>
@@ -1069,9 +1070,9 @@
 </pre></div>
 
 
-<p>参数 <code>event</code> 来自于 <code>onDismissed()</code>，是 <a href="https://developer.android.com/reference/android/support/design/widget/Snackbar.Callback.html">Snackbar.Callback</a> 内预定义的常量之一。</p>
+<p>参数 <code>event</code> 来自于 <code>onDismissed()</code>，是 <a href="https://developer.android.google.cn/reference/android/support/design/widget/Snackbar.Callback.html">Snackbar.Callback</a> 内预定义的常量之一。</p>
 <h4 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h4>
-<p><img alt="" src="http://www.materialdoc.com/images/snack-bar-2.png" /></p>
+<p><img alt="" src="../../images/snack-bar-2.png" /></p>
 <p>Snackbar 可以包含一个 action 。通过调用 <code>setAction()</code> 方法添加它。</p>
 <div class="codehilite"><pre><span></span><span class="n">Snackbar</span>
  <span class="o">.</span><span class="na">make</span><span class="o">(...)</span>
@@ -1084,7 +1085,7 @@
 </pre></div>
 
 
-<p>要开启滑动 dismiss 和自动的移动像 <a href="https://developer.android.com/reference/android/support/design/widget/FloatingActionButton.html">FloatingActionButton</a> 这样的组件需要使用 <a href="https://developer.android.com/reference/android/support/design/widget/CoordinatorLayout.html">CoordinatorLayout</a> 作为根布局。</p>
+<p>要开启滑动 dismiss 和自动的移动像 <a href="https://developer.android.google.cn/reference/android/support/design/widget/FloatingActionButton.html">FloatingActionButton</a> 这样的组件需要使用 <a href="https://developer.android.google.cn/reference/android/support/design/widget/CoordinatorLayout.html">CoordinatorLayout</a> 作为根布局。</p>
 <div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">android</span><span class="o">.</span><span class="na">support</span><span class="o">.</span><span class="na">design</span><span class="o">.</span><span class="na">widget</span><span class="o">.</span><span class="na">CoordinatorLayout</span>
         <span class="n">xmlns</span><span class="o">:</span><span class="n">android</span><span class="o">=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
         <span class="n">xmlns</span><span class="o">:</span><span class="n">tools</span><span class="o">=</span><span class="s">&quot;http://schemas.android.com/tools&quot;</span>
@@ -1101,7 +1102,7 @@
 
 
 <h2 id="_2">如何设置样式?<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p><img alt="" src="http://www.materialdoc.com/images/snack-bar-3.png" /></p>
+<p><img alt="" src="../../images/snack-bar-3.png" /></p>
 <h4 id="_3">通过主题<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
 <p>I. 在你的 <code>values/styles.xml</code> 文件内定义自定义样式。</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&quot;SnackbarTheme&quot;</span> <span class="na">parent=</span><span class="s">&quot;Theme.AppCompat.Light&quot;</span><span class="nt">&gt;</span>
@@ -1119,9 +1120,10 @@
 </pre></div>
 
 
-<blockquote>
-<p>备注: 应用主题到 <code>Activity</code> 将会应用 <code>colorAccent</code> 和 <code>android:textColor</code> 到它内部的所有 view。</p>
-</blockquote>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>应用主题到 <code>Activity</code> 将会应用 <code>colorAccent</code> 和 <code>android:textColor</code> 到它内部的所有 view。</p>
+</div>
 <h4 id="_4">通过代码<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
 <p>使用 <code>getView()</code> 方法获取 <code>Snackbar</code> 视图并改变它的属性。</p>
 <div class="codehilite"><pre><span></span><span class="c1">// 创建实例</span>
@@ -1186,16 +1188,12 @@
 </pre></div>
 
 
-<blockquote>
-<p>备注</p>
-<div class="codehilite"><pre><span></span>Use `@dimen/design_snackbar` values to match material design guidelines.
-
-Use `?attr/colorAccent` to apply your Application Theme changes to `Snackbar`.
-</pre></div>
-
-
-</blockquote>
-<p>II. 继承自 <a href="https://developer.android.com/reference/android/support/design/widget/BaseTransientBottomBar.html">BaseTransientBottomBar</a> 类.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Use <code>@dimen/design_snackbar</code> values to match material design guidelines.
+Use <code>?attr/colorAccent</code> to apply your Application Theme changes to <code>Snackbar</code>.</p>
+</div>
+<p>II. 继承自 <a href="https://developer.android.google.cn/reference/android/support/design/widget/BaseTransientBottomBar.html">BaseTransientBottomBar</a> 类.</p>
 <div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CustomSnackbar</span> <span class="kd">extends</span> <span class="n">BaseTransientBottomBar</span><span class="o">&lt;</span><span class="n">CustomSnackbar</span><span class="o">&gt;</span> <span class="o">{</span>
 
     <span class="cm">/**</span>
@@ -1213,7 +1211,7 @@ Use `?attr/colorAccent` to apply your Application Theme changes to `Snackbar`.
 </pre></div>
 
 
-<p>III. 添加 <a href="https://developer.android.com/reference/android/support/design/widget/BaseTransientBottomBar.ContentViewCallback.html">BaseTransientBottomBar.ContentViewCallback</a></p>
+<p>III. 添加 <a href="https://developer.android.google.cn/reference/android/support/design/widget/BaseTransientBottomBar.ContentViewCallback.html">BaseTransientBottomBar.ContentViewCallback</a></p>
 <div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CustomSnackbar</span> <span class="o">...</span> <span class="o">{</span>
 
   <span class="o">...</span>
@@ -1311,16 +1309,12 @@ Use `?attr/colorAccent` to apply your Application Theme changes to `Snackbar`.
 </pre></div>
 
 
-<blockquote>
-<p>翻译水平有限，欢迎批评指正</p>
-<p>原文作者：Yakiv Mospan 原文地址：<a href="https://materialdoc.com/components/snackbars-and-toasts/#snack-bar">Snackbar</a></p>
-</blockquote>
 <h2 id="toast">Toast<a class="headerlink" href="#toast" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="../../images/toast-1.png" /></p>
-<blockquote>
-<p>摘自 google material design <a href="http://www.google.com.ua/design/spec/components/snackbars-toasts.html#">文档</a>.</p>
+<div class="admonition quote">
+<p class="admonition-title">摘自 google material design <a href="http://www.google.com.ua/design/spec/components/snackbars-toasts.html#">文档</a></p>
 <p>Android 另外提供了一个 toast，主要用于系统消息。Toasts 跟 snackers 类似，但是不能包含 actions 和 不能懂屏幕滑动关闭掉。</p>
-</blockquote>
+</div>
 <h3 id="_5">如何添加?<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>用 make() 方法创建一个 <code>Toast</code> 实例，然后调用 show() 方法。</p>
 <div class="codehilite"><pre><span></span><span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="n">context</span><span class="o">,</span> <span class="s">&quot;No network connection.&quot;</span><span class="o">,</span> <span class="n">duration</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
@@ -1344,9 +1338,10 @@ Use `?attr/colorAccent` to apply your Application Theme changes to `Snackbar`.
 </pre></div>
 
 
-<blockquote>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
 <p>如果在它显示的时候关闭它或者在不想显示的时候它仍然显示，通常你不需要去调用这个方法。它会在持续适当的时间之后自己消失。</p>
-</blockquote>
+</div>
 <h4 id="positioning">Positioning<a class="headerlink" href="#positioning" title="Permanent link">&para;</a></h4>
 <p>用 <code>setGravity()</code> 可以改变 <code>Toast</code> 的显示位置。</p>
 <div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">gravity</span> <span class="o">=</span> <span class="n">Gravity</span><span class="o">.</span><span class="na">CENTER</span><span class="o">;</span> <span class="c1">// the position of toast</span>
@@ -1417,10 +1412,11 @@ Use `?attr/colorAccent` to apply your Application Theme changes to `Snackbar`.
 </pre></div>
 
 
-<blockquote>
-<p>翻译水平有限，欢迎批评指正</p>
-<p>原文作者：Yakiv Mospan 原文地址：<a href="https://materialdoc.com/components/snackbars-and-toasts/#toast">Toast</a></p>
-</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">翻译水平有限，欢迎批评指正</p>
+<p>原文作者：Yakiv Mospan
+原文地址：<a href="https://materialdoc.com/components/snackbars-and-toasts">Snackbars &amp; Toasts</a></p>
+</div>
                 
                   
                 

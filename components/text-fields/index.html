@@ -1003,10 +1003,10 @@
                 
                 <h2 id="text-fields">Text Fields<a class="headerlink" href="#text-fields" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="../../images/text-field-intro-v1.png" /></p>
-<blockquote>
-<p>摘自 google material design <a href="https://www.google.com/design/spec/components/text-fields.html">文档</a>.</p>
+<div class="admonition quote">
+<p class="admonition-title">摘自 google material design <a href="https://www.google.com/design/spec/components/text-fields.html">文档</a></p>
 <p>Text fields 允许用户输入文本，选择文本（剪切，复制，粘贴），通过自动补全检索查询数据。</p>
-</blockquote>
+</div>
 <h3 id="_1">如何添加?<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <p>I. 在你的 <code>build.grade</code> 文件末尾添加 <code>appcompat</code> 库。</p>
 <div class="codehilite"><pre><span></span><span class="n">dependencies</span> <span class="o">{</span>
@@ -1050,10 +1050,10 @@
 
 
 <h3 id="single-line-text-field">Single-line text field<a class="headerlink" href="#single-line-text-field" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>摘自 google material design <a href="https://www.google.com/design/spec/components/text-fields.html#text-fields-single-line-text-field">文档</a>.</p>
+<div class="admonition quote">
+<p class="admonition-title">摘自 google material design <a href="https://www.google.com/design/spec/components/text-fields.html#text-fields-single-line-text-field">文档</a></p>
 <p>Single-line text fields，当输入光标到达输入框右边缘时，文本框的内容会自动滚动到左边。</p>
-</blockquote>
+</div>
 <p>要让你的 <code>EditText</code> 为单行，需要添加 <code>android:singleLine</code> 属性，并且设置其值为 <code>true</code> 。</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;EditText</span>
     <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
@@ -1064,10 +1064,10 @@
 
 
 <h3 id="multi-line-text-field">Multi-line text field<a class="headerlink" href="#multi-line-text-field" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>摘自 google material design <a href="https://www.google.com/design/spec/components/text-fields.html#text-fields-multi-line-text-field">文档</a>.</p>
+<div class="admonition quote">
+<p class="admonition-title">摘自 google material design <a href="https://www.google.com/design/spec/components/text-fields.html#text-fields-multi-line-text-field">文档</a></p>
 <p>Multi-line text fields，当光标达到输入框边缘时，文本框会为溢出的文字自动增加一行，以使文本可以垂直滚动。</p>
-</blockquote>
+</div>
 <p>要让你的 <code>EditText</code> 为多行，需要添加 <code>android:inputType</code> 属性，并且设置其值为 <code>textMultiLine</code> 。</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;EditText</span>
     <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
@@ -1079,10 +1079,10 @@
 
 <h3 id="full-width-text-field">Full-width text field<a class="headerlink" href="#full-width-text-field" title="Permanent link">&para;</a></h3>
 <p><img alt="" src="../../images/Full-width-text-field-v2-1.png" /></p>
-<blockquote>
-<p>摘自 google material design <a href="https://www.google.com/design/spec/components/text-fields.html#text-fields-full-width-text-field">文档</a>.</p>
+<div class="admonition quote">
+<p class="admonition-title">摘自 google material design <a href="https://www.google.com/design/spec/components/text-fields.html#text-fields-full-width-text-field">文档</a></p>
 <p>Full-width text fields（和父布局等宽）适用于更深入复杂的工作。</p>
-</blockquote>
+</div>
 <p>I. 在你的 <code>styles.xml</code> 中声明你自定义的样式。</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&quot;FullWidthEditText&quot;</span> <span class="na">parent=</span><span class="s">&quot;Widget.AppCompat.EditText&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;android:padding&quot;</span><span class="nt">&gt;</span>20dp<span class="nt">&lt;/item&gt;</span>
@@ -1101,15 +1101,12 @@
 </pre></div>
 
 
-<blockquote>
-<p>原文作者：Dmytro Danylyk 原文链接：<a href="https://materialdoc.com/components/text-fields/#text-fields">Text field</a></p>
-</blockquote>
 <h2 id="floating-labels">Floating labels<a class="headerlink" href="#floating-labels" title="Permanent link">&para;</a></h2>
 <p><img alt="Floating labels" src="../../images/floating-label.png" /></p>
-<blockquote>
-<p>摘自  google material design <a href="https://www.google.com/design/spec/components/text-fields.html#text-fields-floating-labels">文档</a></p>
+<div class="admonition quote">
+<p class="admonition-title">摘自  google material design <a href="https://www.google.com/design/spec/components/text-fields.html#text-fields-floating-labels">文档</a></p>
 <p>当用户在输入框输入字符时，行内的浮动标签会自动移动，浮动在输入框的上方。</p>
-</blockquote>
+</div>
 <h3 id="_3">如何添加？<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>I. 在你的 <code>build.gradle</code> 文件里添加最新版本的 <code>appcompat</code> 和 <code>design</code> 库。</p>
 <div class="codehilite"><pre><span></span><span class="n">dependencies</span> <span class="o">{</span>
@@ -1140,9 +1137,10 @@
 </pre></div>
 
 
-<blockquote>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
 <p>控件 <code>TextInputLayout</code> 和 <code>EditText</code> 都具有 <code>android:hint</code> 属性，你可以使用它们中的任意一个。</p>
-</blockquote>
+</div>
 <h3 id="_4">如何设置样式？<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p><img alt="" src="../../images/flaoting-label-styles.png" /></p>
 <p>I. 在你的 <code>styles.xml</code> 里声明你自定义的样式。</p>
@@ -1175,15 +1173,12 @@
 </pre></div>
 
 
-<blockquote>
-<p>原文作者：Dmytro Danylyk 原文链接：<a href="https://materialdoc.com/components/text-fields/#floating-labels">Floating labels</a></p>
-</blockquote>
 <h2 id="user-input-errors">User input errors<a class="headerlink" href="#user-input-errors" title="Permanent link">&para;</a></h2>
 <p><img alt="User input errors" src="../../images/error-label-1.png" /></p>
-<blockquote>
-<p>摘自 google material design <a href="http://www.google.com.ua/design/spec/patterns/errors.html#errors-user-input-errors">文档</a></p>
-<p>（添加了这个属性）一旦检测到输入错误，就会帮助用户去解决它。如果检测到输入错误，就禁止提交表单；（或者）如果提交表单之后检测到错误，可以清楚地解释错误并提示如何去解决。</p>
-</blockquote>
+<div class="admonition quote">
+<p class="admonition-title">摘自 google material design <a href="http://www.google.com.ua/design/spec/patterns/errors.html#errors-user-input-errors">文档</a></p>
+<p>(添加了这个属性）一旦检测到输入错误，就会帮助用户去解决它。如果检测到输入错误，就禁止提交表单；（或者）如果提交表单之后检测到错误，可以清楚地解释错误并提示如何去解决。</p>
+</div>
 <h3 id="_5">如何添加？<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>I. 在你的 <code>build.gradle</code> 文件里添加最新版本的 <code>appcompat</code> 和 <code>design</code> 库。</p>
 <div class="codehilite"><pre><span></span><span class="n">dependencies</span> <span class="o">{</span>
@@ -1223,9 +1218,10 @@
 </pre></div>
 
 
-<blockquote>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
 <p>在 <code>TextInputLayout</code> 里声明 <code>app:errorEnabled="true"</code> 属性需要在 <code>EditText</code> 下面给错误提示标签预留空间。</p>
-</blockquote>
+</div>
 <h3 id="_6">如何设置样式？<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <p><img alt="" src="../../images/error-label-styles-2-1.png" /></p>
 <p>I. 在 <code>styles.xml</code> 声明你自定义样式。</p>
@@ -1259,9 +1255,6 @@
 </pre></div>
 
 
-<blockquote>
-<p>原文作者：Dmytro Danylyk 原文链接：<a href="https://materialdoc.com/components/text-fields/#user-input-errors">User input errors</a></p>
-</blockquote>
 <h2 id="character-counter">Character counter<a class="headerlink" href="#character-counter" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="../../images/counter.gif" /></p>
 <div class="admonition note">
@@ -1399,6 +1392,11 @@ To define a custom style for the overflow.</p>
 
 
 <p>Use a <a href="https://developer.android.com/reference/android/graphics/drawable/StateListDrawable.html">StateListDrawable</a> with the <code>android:state_checked</code> attribute to use separate drawables for each toggle state. Moreover, choose an <a href="https://developer.android.com/reference/android/graphics/drawable/AnimatedStateListDrawable.html">AnimatedStateListDrawable</a> to animate the drawables between states.</p>
+<div class="admonition warning">
+<p class="admonition-title">翻译水平有限，欢迎批评指正</p>
+<p>原文作者: Volodymyr Yatsykiv
+原文链接: <a href="https://materialdoc.com/components/text-fields/">Text Fields</a></p>
+</div>
                 
                   
                 
